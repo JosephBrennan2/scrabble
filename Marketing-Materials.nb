@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[    149213,       3456]
-NotebookOptionsPosition[    146833,       3409]
-NotebookOutlinePosition[    147270,       3426]
-CellTagsIndexPosition[    147227,       3423]
+NotebookDataLength[    137568,       3158]
+NotebookOptionsPosition[    135983,       3124]
+NotebookOutlinePosition[    136419,       3141]
+CellTagsIndexPosition[    136376,       3138]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,10 +21,10 @@ Notebook[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"PacletDirectoryLoad", "[", 
-   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{"<<", "TheDiractionary`"}]}], "Input",
- CellLabel->"In[25]:=",ExpressionUUID->"c0a6827c-e0b2-4741-989f-68f86240c026"],
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "Scrabbology`"}]}], "Input",
+ CellChangeTimes->{{3.963566506857649*^9, 3.9635665110966854`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"c0a6827c-e0b2-4741-989f-68f86240c026"],
 
 Cell[CellGroupData[{
 
@@ -39,29 +39,26 @@ Cell[BoxData[
   RowBox[{"store", "=", 
    RowBox[{"CloudGet", "[", "\"\<PerfectScrabbleGames\>\"", "]"}]}], 
   ";"}]], "Input",
- CellLabel->"In[27]:=",ExpressionUUID->"0403f5d4-887d-ba46-afef-59de7e591bfc"],
+ CellLabel->"In[15]:=",ExpressionUUID->"0403f5d4-887d-ba46-afef-59de7e591bfc"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
   RowBox[{"game", "=", 
-   RowBox[{"RandomChoice", "[", "store", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+   RowBox[{"RandomChoice", "[", "store", "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"board", "=", 
-   RowBox[{"CreateInitialScrabbleBoard", "[", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+   RowBox[{"CreateInitialScrabbleBoard", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Show", "[", 
   RowBox[{"board", ",", 
    RowBox[{"Epilog", "->", 
-    RowBox[{"GameToEpilog", "[", "game", "]"}]}]}], 
-  "]"}], "\[IndentingNewLine]", 
+    RowBox[{"GameToEpilog", "[", "game", "]"}]}]}], "]"}], "\[IndentingNewLine]", 
  RowBox[{"PerfectScrabbleGameQ", "[", "game", "]"}], "\[IndentingNewLine]", 
  RowBox[{"Dataset", "[", "game", "]"}]}], "Input",
  CellChangeTimes->{{3.9434278351517143`*^9, 3.9434278437603626`*^9}, {
   3.943428496210535*^9, 3.9434285134659157`*^9}},
- CellLabel->"In[36]:=",ExpressionUUID->"3a491659-c889-8142-ab4d-3a1c30eaced4"],
+ CellLabel->"In[16]:=",ExpressionUUID->"3a491659-c889-8142-ab4d-3a1c30eaced4"],
 
 Cell[BoxData[
  GraphicsBox[{RasterBox[CompressedData["
@@ -102,7 +99,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{2, 8}, {3, 7}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"W\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"H\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       2.5, 7.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -110,7 +107,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{3, 8}, {4, 7}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       3.5, 7.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -118,7 +115,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{4, 8}, {5, 7}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       4.5, 7.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -126,7 +123,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 8}, {6, 7}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"K\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       5.5, 7.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -142,135 +139,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{7, 8}, {8, 7}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 7.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{1, 15}, {2, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"J\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      1.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{1, 14}, {2, 13}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      1.5, 13.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{1, 13}, {2, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"C\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      1.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{1, 12}, {2, 11}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      1.5, 11.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{1, 11}, {2, 10}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      1.5, 10.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{1, 10}, {2, 9}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      1.5, 9.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{1, 9}, {2, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"H\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      1.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{1, 8}, {2, 7}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
        StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      1.5, 7.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 15}, {8, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"M\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 14}, {8, 13}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 13.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 13}, {8, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 12}, {8, 11}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"G\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 11.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 11}, {8, 10}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 10.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 10}, {8, 9}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 9.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 9}, {8, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 8}, {8, 7}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       7.5, 7.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -278,7 +147,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 15}, {6, 14}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"H\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       5.5, 14.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -286,7 +155,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 14}, {6, 13}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       5.5, 13.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -294,7 +163,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 13}, {6, 12}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"W\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       5.5, 12.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -302,7 +171,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 12}, {6, 11}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       5.5, 11.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -310,7 +179,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 11}, {6, 10}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"B\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       5.5, 10.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -318,7 +187,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 10}, {6, 9}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"F\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       5.5, 9.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -326,7 +195,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 9}, {6, 8}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"C\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       5.5, 8.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -334,399 +203,15 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{5, 8}, {6, 7}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      5.5, 7.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 8}, {7, 7}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 7.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 7}, {7, 6}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"M\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 6.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 6}, {7, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"B\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 5}, {7, 4}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 4.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 4}, {7, 3}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 3.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 3}, {7, 2}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"Z\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 2.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 2}, {7, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 1}, {7, 0}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 0.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 6}, {7, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"B\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 6}, {8, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{8, 6}, {9, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"C\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      8.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{9, 6}, {10, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
        StyleBox["\"K\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      9.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{10, 6}, {11, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"F\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      10.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{11, 6}, {12, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      11.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{12, 6}, {13, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      12.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{13, 6}, {14, 5}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"W\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      13.5, 5.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{6, 2}, {7, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      6.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 2}, {8, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"P\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{8, 2}, {9, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      8.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{9, 2}, {10, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"X\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      9.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{10, 2}, {11, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"Y\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      10.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{11, 2}, {12, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      11.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{12, 2}, {13, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      12.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{13, 2}, {14, 1}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"G\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      13.5, 1.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 15}, {8, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"M\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{8, 15}, {9, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      8.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{9, 15}, {10, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      9.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{10, 15}, {11, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      10.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{11, 15}, {12, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      11.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{12, 15}, {13, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      12.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{13, 15}, {14, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      13.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{14, 15}, {15, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"Y\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      14.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{3, 15}, {4, 14}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      3.5, 14.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{3, 14}, {4, 13}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      3.5, 13.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{3, 13}, {4, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      3.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{3, 12}, {4, 11}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      3.5, 11.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{3, 11}, {4, 10}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"V\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      3.5, 10.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{3, 10}, {4, 9}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      3.5, 9.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{3, 9}, {4, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      3.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{3, 8}, {4, 7}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      3.5, 7.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{7, 9}, {8, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      7.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{8, 9}, {9, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      8.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{9, 9}, {10, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"Q\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      9.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{10, 9}, {11, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      10.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{11, 9}, {12, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      11.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{12, 9}, {13, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      12.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{13, 9}, {14, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      13.5, 8.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{14, 9}, {15, 8}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      14.5, 8.5}]}, {{
+      5.5, 7.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
        Thickness[Tiny]], 
       RectangleBox[{4, 8}, {5, 7}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       4.5, 7.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -734,7 +219,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{4, 7}, {5, 6}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       4.5, 6.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -742,7 +227,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{4, 6}, {5, 5}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"V\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"P\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       4.5, 5.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -750,7 +235,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{4, 5}, {5, 4}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       4.5, 4.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -758,7 +243,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{4, 4}, {5, 3}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       4.5, 3.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -766,7 +251,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{4, 3}, {5, 2}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"H\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       4.5, 2.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -782,143 +267,335 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{4, 1}, {5, 0}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       4.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{1, 15}, {2, 14}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      1.5, 14.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{1, 14}, {2, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      1.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{1, 13}, {2, 12}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"B\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      1.5, 12.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{1, 12}, {2, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      1.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{1, 11}, {2, 10}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      1.5, 10.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{1, 10}, {2, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      1.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{1, 9}, {2, 8}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"C\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      1.5, 8.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{1, 8}, {2, 7}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      1.5, 7.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{7, 15}, {8, 14}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"Q\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      7.5, 14.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{7, 14}, {8, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      7.5, 13.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
        Thickness[Tiny]], 
       RectangleBox[{7, 13}, {8, 12}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       7.5, 12.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
        Thickness[Tiny]], 
-      RectangleBox[{8, 13}, {9, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      8.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{9, 13}, {10, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      9.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{10, 13}, {11, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      10.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{11, 13}, {12, 12}, RoundingRadius -> 0.2]}, 
+      RectangleBox[{7, 12}, {8, 11}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
        StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      11.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{12, 13}, {13, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      12.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{13, 13}, {14, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      13.5, 12.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{14, 13}, {15, 12}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"G\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      14.5, 12.5}]}, {{
+      7.5, 11.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
        Thickness[Tiny]], 
       RectangleBox[{7, 11}, {8, 10}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       7.5, 10.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
        Thickness[Tiny]], 
-      RectangleBox[{8, 11}, {9, 10}, RoundingRadius -> 0.2]}, 
+      RectangleBox[{7, 10}, {8, 9}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
        StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      8.5, 10.5}]}, {{
+      7.5, 9.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
        Thickness[Tiny]], 
-      RectangleBox[{9, 11}, {10, 10}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      9.5, 10.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{10, 11}, {11, 10}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      10.5, 10.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{11, 11}, {12, 10}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      11.5, 10.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{12, 11}, {13, 10}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      12.5, 10.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{13, 11}, {14, 10}, RoundingRadius -> 0.2]}, 
-     InsetBox[
-      FormBox[
-       StyleBox["\"Z\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      13.5, 10.5}]}, {{
-      RGBColor[1, 1, 0.85], 
-      EdgeForm[
-       Thickness[Tiny]], 
-      RectangleBox[{14, 11}, {15, 10}, RoundingRadius -> 0.2]}, 
+      RectangleBox[{7, 9}, {8, 8}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
        StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      14.5, 10.5}]}, {{
+      7.5, 8.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{7, 8}, {8, 7}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      7.5, 7.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 8}, {7, 7}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 7.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 7}, {7, 6}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 6.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 6}, {7, 5}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"Y\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 5.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 5}, {7, 4}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 4.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 4}, {7, 3}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 3.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 3}, {7, 2}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 2.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 2}, {7, 1}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 1.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 1}, {7, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{7, 14}, {8, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      7.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{8, 14}, {9, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      8.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{9, 14}, {10, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      9.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 14}, {11, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{11, 14}, {12, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"X\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      11.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{12, 14}, {13, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      12.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{13, 14}, {14, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      13.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 14}, {15, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"G\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{7, 12}, {8, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      7.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{8, 12}, {9, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      8.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{9, 12}, {10, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      9.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 12}, {11, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{11, 12}, {12, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      11.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{12, 12}, {13, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"V\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      12.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{13, 12}, {14, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      13.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 12}, {15, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 11.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
        Thickness[Tiny]], 
       RectangleBox[{2, 8}, {3, 7}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"W\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"H\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       2.5, 7.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -926,7 +603,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{2, 7}, {3, 6}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       2.5, 6.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -934,7 +611,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{2, 6}, {3, 5}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"P\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"M\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       2.5, 5.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -942,7 +619,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{2, 5}, {3, 4}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       2.5, 4.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -950,7 +627,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{2, 4}, {3, 3}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       2.5, 3.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -958,7 +635,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{2, 3}, {3, 2}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"B\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       2.5, 2.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -966,7 +643,7 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{2, 2}, {3, 1}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
-       StyleBox["\"L\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+       StyleBox["\"F\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
       2.5, 1.5}]}, {{
       RGBColor[1, 1, 0.85], 
       EdgeForm[
@@ -974,8 +651,328 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
       RectangleBox[{2, 1}, {3, 0}, RoundingRadius -> 0.2]}, 
      InsetBox[
       FormBox[
+       StyleBox["\"Y\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      2.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{7, 10}, {8, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"N\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      7.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{8, 10}, {9, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      8.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{9, 10}, {10, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      9.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 10}, {11, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{11, 10}, {12, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"J\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      11.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{12, 10}, {13, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      12.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{13, 10}, {14, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
        StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
-      2.5, 0.5}]}},
+      13.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 10}, {15, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{3, 15}, {4, 14}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"O\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      3.5, 14.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{3, 14}, {4, 13}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"V\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      3.5, 13.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{3, 13}, {4, 12}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      3.5, 12.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{3, 12}, {4, 11}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      3.5, 11.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{3, 11}, {4, 10}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"F\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      3.5, 10.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{3, 10}, {4, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      3.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{3, 9}, {4, 8}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      3.5, 8.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{3, 8}, {4, 7}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      3.5, 7.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{6, 1}, {7, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      6.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{7, 1}, {8, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"I\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      7.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{8, 1}, {9, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      8.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{9, 1}, {10, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"Z\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      9.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 1}, {11, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{11, 1}, {12, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"P\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      11.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{12, 1}, {13, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      12.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{13, 1}, {14, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"M\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      13.5, 0.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 10}, {15, 9}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 9.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 9}, {15, 8}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 8.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 8}, {15, 7}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"G\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 7.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 7}, {15, 6}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"G\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 6.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 6}, {15, 5}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 5.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 5}, {15, 4}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 4.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 4}, {15, 3}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 3.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{14, 3}, {15, 2}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"D\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      14.5, 2.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 8}, {11, 7}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"S\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 7.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 7}, {11, 6}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 6.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 6}, {11, 5}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 5.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 5}, {11, 4}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"U\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 4.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 4}, {11, 3}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"R\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 3.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 3}, {11, 2}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"A\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 2.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 2}, {11, 1}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"T\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 1.5}]}, {{
+      RGBColor[1, 1, 0.85], 
+      EdgeForm[
+       Thickness[Tiny]], 
+      RectangleBox[{10, 1}, {11, 0}, RoundingRadius -> 0.2]}, 
+     InsetBox[
+      FormBox[
+       StyleBox["\"E\"", 16, Bold, StripOnInput -> False], TraditionalForm], {
+      10.5, 0.5}]}},
   Frame->False,
   FrameLabel->{None, None},
   FrameTicks->{{None, None}, {None, None}},
@@ -992,8 +989,8 @@ wZbfh4p7UO0fbT8PDncOvvAkVf3g8u/o+AZ+cVLDZ6i0Q4bueB0AdOt7Xg==
           "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
     Automatic}]], "Output",
  CellChangeTimes->{3.9434278455906906`*^9, 3.9434284592053623`*^9, 
-  3.9434285155041733`*^9},
- CellLabel->"Out[38]=",ExpressionUUID->"ed0f88ef-76b9-894c-bd8a-d89e3f447031"],
+  3.9434285155041733`*^9, 3.9635665287095776`*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"f00544a4-d398-ce4d-962b-1a19b25b93bb"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1001,53 +998,53 @@ Cell[BoxData[
    TagBox[GridBox[{
       {"\<\"Blanks:\"\>", 
        RowBox[{"{", 
-        RowBox[{"\<\"L\"\>", ",", "\<\"Z\"\>"}], "}"}]},
+        RowBox[{"\<\"R\"\>", ",", "\<\"R\"\>"}], "}"}]},
       {"\<\" Leftovers:\"\>", 
        RowBox[{"{", 
-        RowBox[{"\<\"E\"\>", ",", "\<\"I\"\>"}], "}"}]}
+        RowBox[{"\<\"E\"\>", ",", "\<\"W\"\>"}], "}"}]}
      },
      AutoDelete->False,
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Grid"]}], "}"}]], "Output",
  CellChangeTimes->{3.9434278455906906`*^9, 3.9434284592053623`*^9, 
-  3.9434285155202045`*^9},
- CellLabel->"Out[39]=",ExpressionUUID->"d5d165f1-fb0a-8b42-b300-6e11404cf827"],
+  3.9434285155041733`*^9, 3.963566528763588*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"087c2c2d-017f-2442-bb7f-95fb25817cea"],
 
 Cell[BoxData[
  TagBox[
   TagBox[
    DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
     "InitialData" -> <|
-      1 -> <|"Bingo" -> "SWELLED", "Position" -> {"H", 2}, "Direction" -> 
+      1 -> <|"Bingo" -> "SHRIKES", "Position" -> {"H", 2}, "Direction" -> 
          "Right"|>, 
-       2 -> <|"Bingo" -> "JACINTHS", "Position" -> {"A", 2}, "Direction" -> 
+       2 -> <|"Bingo" -> "HOWLBACK", "Position" -> {"A", 6}, "Direction" -> 
+         "Down", "Overlap" -> "K"|>, 
+       3 -> <|"Bingo" -> "INPOURED", "Position" -> {"H", 5}, "Direction" -> 
+         "Down", "Overlap" -> "I"|>, 
+       4 -> <|"Bingo" -> "ROBOTICS", "Position" -> {"A", 2}, "Direction" -> 
          "Down", "Overlap" -> "S"|>, 
-       3 -> <|"Bingo" -> "MUDGUARD", "Position" -> {"A", 8}, "Direction" -> 
-         "Down", "Overlap" -> "D"|>, 
-       4 -> <|"Bingo" -> "DREADFUL", "Position" -> {"A", 6}, "Direction" -> 
-         "Down", "Overlap" -> "L"|>, 
-       5 -> <|"Bingo" -> "EMBLAZER", "Position" -> {"H", 7}, "Direction" -> 
+       5 -> <|"Bingo" -> "QUINONES", "Position" -> {"A", 8}, "Direction" -> 
+         "Down", "Overlap" -> "S"|>, 
+       6 -> <|"Bingo" -> "ELYTROID", "Position" -> {"H", 7}, "Direction" -> 
          "Down", "Overlap" -> "E"|>, 
-       6 -> <|"Bingo" -> "BACKFLOW", "Position" -> {"J", 7}, "Direction" -> 
-         "Right", "Overlap" -> "B"|>, 
-       7 -> <|"Bingo" -> "EPOXYING", "Position" -> {"N", 7}, "Direction" -> 
-         "Right", "Overlap" -> "E"|>, 
-       8 -> <|"Bingo" -> "MORATORY", "Position" -> {"A", 8}, "Direction" -> 
-         "Right", "Overlap" -> "M"|>, 
-       9 -> <|"Bingo" -> "ROTOVATE", "Position" -> {"A", 4}, "Direction" -> 
-         "Down", "Overlap" -> "E"|>, 
-       10 -> <|"Bingo" -> "ROQUETTE", "Position" -> {"G", 8}, "Direction" -> 
-         "Right", "Overlap" -> "R"|>, 
-       11 -> <|"Bingo" -> "LAVISHES", "Position" -> {"H", 5}, "Direction" -> 
-         "Down", "Overlap" -> "L"|>, 
-       12 -> <|"Bingo" -> "DESINING", "Position" -> {"C", 8}, "Direction" -> 
-         "Right", "Overlap" -> "D"|>, 
-       13 -> <|"Bingo" -> "UNIONIZE", "Position" -> {"E", 8}, "Direction" -> 
+       7 -> <|"Bingo" -> "UNTAXING", "Position" -> {"B", 8}, "Direction" -> 
          "Right", "Overlap" -> "U"|>, 
-       14 -> <|"Bingo" -> "WIPEABLE", "Position" -> {"H", 3}, "Direction" -> 
-         "Down", "Overlap" -> "W"|>|>, "AllowEmbedding" -> True, 
+       8 -> <|"Bingo" -> "NONLEVEL", "Position" -> {"D", 8}, "Direction" -> 
+         "Right", "Overlap" -> "N"|>, 
+       9 -> <|"Bingo" -> "HUMIDIFY", "Position" -> {"H", 3}, "Direction" -> 
+         "Down", "Overlap" -> "H"|>, 
+       10 -> <|"Bingo" -> "NARTJIES", "Position" -> {"F", 8}, "Direction" -> 
+         "Right", "Overlap" -> "N"|>, 
+       11 -> <|"Bingo" -> "OVERFEAR", "Position" -> {"A", 4}, "Direction" -> 
+         "Down", "Overlap" -> "R"|>, 
+       12 -> <|"Bingo" -> "DIAZEPAM", "Position" -> {"O", 7}, "Direction" -> 
+         "Right", "Overlap" -> "D"|>, 
+       13 -> <|"Bingo" -> "SAGGERED", "Position" -> {"F", 15}, "Direction" -> 
+         "Down", "Overlap" -> "S"|>, 
+       14 -> <|"Bingo" -> "SATURATE", "Position" -> {"H", 11}, "Direction" -> 
+         "Down", "Overlap" -> "E"|>|>, "AllowEmbedding" -> True, 
      "InitialShape" -> TypeSystem`PackageScope`HeaderShape[<|{All, 
-          TypeSystem`PackageScope`KeyDummy[3]} -> 1, {All, "Bingo"} -> 
+          TypeSystem`PackageScope`KeyDummy[0]} -> 1, {All, "Bingo"} -> 
         1, {All, "Position"} -> 2, {All, "Direction"} -> 1, {All, "Overlap"} -> 
         1|>, 
        TypeSystem`PackageScope`Limited[
@@ -1077,7 +1074,7 @@ Cell[BoxData[
          TypeSystem`Atom[String]}], 14], "Meta" -> <||>, "RowTarget" -> 20, 
      "ColumnTarget" -> 10, "Shape" -> 
      TypeSystem`PackageScope`HeaderShape[<|{All, 
-          TypeSystem`PackageScope`KeyDummy[3]} -> 1, {All, "Bingo"} -> 
+          TypeSystem`PackageScope`KeyDummy[0]} -> 1, {All, "Bingo"} -> 
         1, {All, "Position"} -> 2, {All, "Direction"} -> 1, {All, "Overlap"} -> 
         1|>, 
        TypeSystem`PackageScope`Limited[
@@ -1123,7 +1120,8 @@ Cell[BoxData[
                 Graphics[{}, ImageSize -> 6, BaselinePosition -> 
                  Scaled[-0.15]], 
                 Graphics[{
-                  GrayLevel[0.6], 
+                  RGBColor[
+                  0.6000839236379029, 0.6000839236379029, 0.6000839236379029], 
                   
                   Polygon[{{2^Rational[-1, 2], -2^Rational[-1, 2]}, {
                     2^Rational[-1, 2], 2^
@@ -1137,7 +1135,9 @@ Cell[BoxData[
                 All, Keys}, "KeyDummy", True], "Mouse"], 
               ImageSize -> {{1, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
               Annotation[
@@ -1147,8 +1147,8 @@ Cell[BoxData[
                   Style[
                   "Bingo", FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1168,7 +1168,9 @@ Cell[BoxData[
                 All, "Bingo"}, "ColumnHeader", True], "Mouse"], 
               ImageSize -> {{1, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
               Annotation[
@@ -1178,8 +1180,8 @@ Cell[BoxData[
                   Style[
                   "Position", FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1199,7 +1201,9 @@ Cell[BoxData[
                 All, "Position"}, "ColumnHeader", False], "Mouse"], 
               ImageSize -> {{1, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Center, Baseline}], SpanFromLeft, 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Center, Baseline}], SpanFromLeft, 
             Item[
              Pane[
               Annotation[
@@ -1209,8 +1213,8 @@ Cell[BoxData[
                   Style[
                   "Direction", FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1230,7 +1234,9 @@ Cell[BoxData[
                 All, "Direction"}, "ColumnHeader", True], "Mouse"], 
               ImageSize -> {{1, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
               Annotation[
@@ -1240,8 +1246,8 @@ Cell[BoxData[
                   Style[
                   "Overlap", FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1261,7 +1267,9 @@ Cell[BoxData[
                 All, "Overlap"}, "ColumnHeader", True], "Mouse"], 
               ImageSize -> {{1, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}]}, {
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}]}, {
             Item[
              Pane[
               Annotation[
@@ -1272,8 +1280,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["1"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1293,10 +1301,12 @@ Cell[BoxData[
                  Key[1]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["SWELLED", 
+              Annotation["SHRIKES", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1342,7 +1352,9 @@ Cell[BoxData[
             Item[
              Pane[
               Style["\[LongDash]", 
-               GrayLevel[0.75]], ImageMargins -> {{5, 3}, {4, 5}}], 
+               RGBColor[
+               0.750103759318626, 0.750103759318626, 0.750103759318626]], 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
              Alignment -> {Left, Baseline}]}, {
             Item[
              Pane[
@@ -1354,8 +1366,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["2"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1375,10 +1387,12 @@ Cell[BoxData[
                  Key[2]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["JACINTHS", 
+              Annotation["HOWLBACK", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1401,7 +1415,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["2"], 
+               RawBoxes["6"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1423,7 +1437,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["S", 
+              Annotation["K", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1442,8 +1456,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["3"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1463,10 +1477,12 @@ Cell[BoxData[
                  Key[3]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["MUDGUARD", 
+              Annotation["INPOURED", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1477,7 +1493,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["A", 
+              Annotation["H", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1489,7 +1505,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["8"], 
+               RawBoxes["5"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1511,7 +1527,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["D", 
+              Annotation["I", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1530,8 +1546,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["4"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1551,10 +1567,12 @@ Cell[BoxData[
                  Key[4]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["DREADFUL", 
+              Annotation["ROBOTICS", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1577,7 +1595,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["6"], 
+               RawBoxes["2"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1599,7 +1617,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["L", 
+              Annotation["S", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1618,8 +1636,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["5"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1639,10 +1657,12 @@ Cell[BoxData[
                  Key[5]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["EMBLAZER", 
+              Annotation["QUINONES", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1653,7 +1673,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["H", 
+              Annotation["A", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1665,7 +1685,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["7"], 
+               RawBoxes["8"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1687,7 +1707,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["E", 
+              Annotation["S", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1706,8 +1726,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["6"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1727,10 +1747,12 @@ Cell[BoxData[
                  Key[6]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["BACKFLOW", 
+              Annotation["ELYTROID", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1741,7 +1763,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["J", 
+              Annotation["H", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1764,7 +1786,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["Right", 
+              Annotation["Down", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1775,7 +1797,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["B", 
+              Annotation["E", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1794,8 +1816,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["7"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1815,10 +1837,12 @@ Cell[BoxData[
                  Key[7]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["EPOXYING", 
+              Annotation["UNTAXING", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1829,7 +1853,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["N", 
+              Annotation["B", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1841,7 +1865,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["7"], 
+               RawBoxes["8"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1863,7 +1887,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["E", 
+              Annotation["U", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1882,8 +1906,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["8"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1903,10 +1927,12 @@ Cell[BoxData[
                  Key[8]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["MORATORY", 
+              Annotation["NONLEVEL", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1917,7 +1943,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["A", 
+              Annotation["D", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1951,7 +1977,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["M", 
+              Annotation["N", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -1970,8 +1996,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["9"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -1991,10 +2017,12 @@ Cell[BoxData[
                  Key[9]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["ROTOVATE", 
+              Annotation["HUMIDIFY", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2005,7 +2033,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["A", 
+              Annotation["H", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2017,7 +2045,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["4"], 
+               RawBoxes["3"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2039,7 +2067,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["E", 
+              Annotation["H", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2058,8 +2086,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["10"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -2079,10 +2107,12 @@ Cell[BoxData[
                  Key[10]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["ROQUETTE", 
+              Annotation["NARTJIES", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2093,7 +2123,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["G", 
+              Annotation["F", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2127,7 +2157,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["R", 
+              Annotation["N", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2146,8 +2176,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["11"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -2167,10 +2197,12 @@ Cell[BoxData[
                  Key[11]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["LAVISHES", 
+              Annotation["OVERFEAR", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2181,7 +2213,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["H", 
+              Annotation["A", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2193,7 +2225,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["5"], 
+               RawBoxes["4"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2215,7 +2247,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["L", 
+              Annotation["R", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2234,8 +2266,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["12"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -2255,10 +2287,12 @@ Cell[BoxData[
                  Key[12]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["DESINING", 
+              Annotation["DIAZEPAM", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2269,7 +2303,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["C", 
+              Annotation["O", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2281,7 +2315,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["8"], 
+               RawBoxes["7"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2322,8 +2356,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["13"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -2343,10 +2377,12 @@ Cell[BoxData[
                  Key[13]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["UNIONIZE", 
+              Annotation["SAGGERED", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2357,7 +2393,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["E", 
+              Annotation["F", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2369,7 +2405,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["8"], 
+               RawBoxes["15"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2380,7 +2416,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["Right", 
+              Annotation["Down", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2391,7 +2427,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["U", 
+              Annotation["S", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2410,8 +2446,8 @@ Cell[BoxData[
                   Style[
                    RawBoxes["14"], FontColor -> 
                    RGBColor[
-                    0.27450980392156865`, 0.5372549019607843, 
-                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    0.2749633796890805, 0.536987306253161, 
+                    0.791992189065661]]], "LinkHand"], {"MouseClicked", 1} :> 
                 If[
                   TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                   TypeSystem`NestedGrid`PackagePrivate`$state$$], 
@@ -2431,10 +2467,12 @@ Cell[BoxData[
                  Key[14]}, "RowHeader", False], "Mouse"], 
               ImageSize -> {{34, Full}, Automatic}, 
               ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
-             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+             RGBColor[
+              0.9500473017990948, 0.9500473017990948, 0.9500473017990948], 
+             Alignment -> {Left, Baseline}], 
             Item[
              Pane[
-              Annotation["WIPEABLE", 
+              Annotation["SATURATE", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2457,7 +2495,7 @@ Cell[BoxData[
             Item[
              Pane[
               Annotation[
-               RawBoxes["3"], 
+               RawBoxes["11"], 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2479,7 +2517,7 @@ Cell[BoxData[
              ItemSize -> {Full, Automatic}], 
             Item[
              Pane[
-              Annotation["W", 
+              Annotation["E", 
                TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
                 TypeSystem`NestedGrid`PackagePrivate`localHold[
                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
@@ -2617,7 +2655,8 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
                     TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
                     "Ascending"]], MenuEvaluator -> Automatic], Nothing], 
-                    If[TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
                     "Descending", 
                     MenuItem["Reverse Sort", 
                     KernelExecute[
@@ -2671,7 +2710,8 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
                     MenuEvaluator -> Automatic], Nothing]}]]]]], FontFamily -> 
             "Source Sans Pro", FontSize -> 14, FontWeight -> Plain}, Dividers -> 
-          All, FrameStyle -> GrayLevel[0.7490196078431373], 
+          All, FrameStyle -> 
+          RGBColor[0.749003690406716, 0.749003690406716, 0.749003690406716], 
           Spacings -> {0, 0}, Alignment -> Left, 
           BaseStyle -> {
            FontFamily -> "Source Sans Pro", FontSize -> 14, FontWeight -> 
@@ -2788,7 +2828,9 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
      MouseAnnotation[],
      ImageSizeCache->{
       323.2256003856659, {157.6952265414754, 162.2807734585246}}],
-    BaseStyle->{LineBreakWithin -> False},
+    BaseStyle->{
+     LineBreakWithin -> False, 
+      LightDarkAutoColorRules -> <|"MarkedColors" -> True|>},
     DynamicModuleValues:>{},
     Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
      CreateUUID[]),
@@ -2800,15 +2842,15 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{3.9434278455906906`*^9, 3.9434284592053623`*^9, 
-  3.9434285155598373`*^9},
- CellLabel->"Out[40]=",ExpressionUUID->"ddd18868-814f-f742-a2cd-9cba4b27f2a4"]
+  3.9434285155041733`*^9, 3.9635665288359184`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"bdf4631e-5cdc-7b42-a4c5-e58093d40118"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"PerfectScrabbleGameQ", "/@", "store"}]], "Input",
- CellLabel->"In[41]:=",ExpressionUUID->"9db816c7-1e80-ff46-a319-ce223b8d60d1"],
+ CellLabel->"In[21]:=",ExpressionUUID->"9db816c7-1e80-ff46-a319-ce223b8d60d1"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -3003,389 +3045,62 @@ Cell[BoxData[
        },
        AutoDelete->False,
        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-      "Grid"]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.9434285713787365`*^9},
- CellLabel->"Out[41]=",ExpressionUUID->"77af9845-109f-854f-84a8-13cf38e23376"]
-}, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["GIF", "Subsection",
- CellChangeTimes->{{3.943424169265234*^9, 
-  3.9434241709362183`*^9}},ExpressionUUID->"35c0cb79-f368-1b4f-b165-\
-34d01086713e"],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "1", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", ";;", "7"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "2", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", ";;", "15"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "3", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", " ", ";;", " ", "23"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "4", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", ";;", " ", "31"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "5", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", " ", ";;", " ", "39"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "6", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", ";;", " ", "47"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "7", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", " ", ";;", " ", "55"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "8", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", ";;", " ", "63"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "9", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", ";;", " ", "71"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "10", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", " ", ";;", " ", "79"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "11", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", " ", ";;", " ", "87"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "12", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", " ", ";;", " ", "95"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "13", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", " ", ";;", " ", "103"}], "]"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifFrame", "[", "14", "]"}], "=", 
-   RowBox[{"epilog", "[", 
-    RowBox[{"[", 
-     RowBox[{"1", " ", ";;", " ", "111"}], "]"}], "]"}]}], ";"}]}], "Input",
- CellChangeTimes->{{3.943375722290621*^9, 3.9433757378452473`*^9}, {
-  3.943375979948942*^9, 3.943376003903652*^9}, {3.9433806387813454`*^9, 
-  3.943380670081579*^9}},
- CellLabel->
-  "In[199]:=",ExpressionUUID->"967db361-792a-7e44-a8d6-71a9df524c61"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Animate", "[", 
-  RowBox[{
-   RowBox[{"Show", "[", 
-    RowBox[{"board", ",", 
-     RowBox[{"Epilog", "->", 
-      RowBox[{"gifFrame", "[", "i", "]"}]}]}], "]"}], ",", 
+      "Grid"]}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"i", ",", "1", ",", "14", ",", "1"}], "}"}], ",", 
-   RowBox[{"AnimationRate", "->", ".5"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.9433805713209877`*^9, 3.943380608970295*^9}, {
-  3.9433806822541065`*^9, 3.943380687481331*^9}},
- CellLabel->
-  "In[214]:=",ExpressionUUID->"2f39e28e-27d2-2847-bc1c-9901bac4e2fe"],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`i$$ = 9, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`i$$], 1, 14, 1, ControlType -> Animator}}, 
-    Typeset`size$$ = {288., {141.4776265414754, 146.0631734585246}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
-    Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, "Variables" :> {$CellContext`i$$ = 1}, 
-      "ControllerVariables" :> {}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$, Typeset`keyframeActionsQ$$, 
-        Typeset`keyframeList$$}, "Body" :> 
-      Show[$CellContext`board, 
-        Epilog -> $CellContext`gifFrame[$CellContext`i$$]], 
-      "Specifications" :> {{$CellContext`i$$, 1, 14, 1, AnimationRate -> 0.5, 
-         AppearanceElements -> {
-          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
-           "DirectionButton"}}}, 
-      "Options" :> {
-       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
-        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
-        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{326.88, {169.61762654147537`, 174.2031734585246}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Animate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.943380585230732*^9, 3.943380633626032*^9}, {
-  3.943380673057886*^9, 3.9433806883896294`*^9}},
- CellLabel->
-  "Out[214]=",ExpressionUUID->"22b34f75-6cdf-0547-a2b4-31bcc17daea5"]
-}, Open  ]],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"tileBag", "=", 
-   RowBox[{"StringJoin", "[", 
-    RowBox[{"KeyValueMap", "[", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"Table", "[", 
-        RowBox[{"#1", ",", "#2"}], "]"}], "&"}], ",", 
-      RowBox[{"tiles", "[", 
-       RowBox[{"[", 
-        RowBox[{"All", ",", "\"\<Quantity\>\""}], "]"}], "]"}]}], "]"}], 
-    "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "1", "]"}], "=", 
-   "\"\<AAAAAAAABBCCDDDDEEEEEEEEEEEFFGGHHIIIIIIIIJKLLLLMNNNNNNOOOOOOOOPPQRRRRR\
-RSSTTTTTTUUUUVVWWXYYZ??\>\""}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "2", "]"}], "=", 
-   "\"\<AAAAAAABBCCDDDDEEEEEEEEEEEFFGGHIIIIIIIJKLLLLMNNNNNNOOOOOOOOPQRRRRRRSTT\
-TTTTUUUUVVXYYZ??\>\""}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "3", "]"}], "=", 
-   "\"\<AAAAAAABBCCDDDDEEEEEEEEEEFFGGHIIIIIIJKLLLLMNNNNNOOOOOOPQRRRRRRTTTTTTUU\
-UUVVXYY??\>\""}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "4", "]"}], "=", 
-   "\"\<AAAAAAABBCDDDDEEEEEEEEEEFFGHIIIIIKLLLMNNNNNOOOOOPQRRRRRRTTTTTTUUUVVXYY\
-??\>\""}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "5", "]"}], "=", 
-   "\"\<AAAABBCDDDDEEEEEEEEEEFFGIIIIIKLLLMNNNOOOOOPQRRRRRRTTTTTTUUUVXYY??\>\"\
-"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "6", "]"}], "=", 
-   "\"\<AAAABBDDDDEEEEEEEEEFFIIIIIKLLMNNOOOOPQRRRRRRTTTTTTUUUVXY??\>\""}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "7", "]"}], "=", 
-   "\"\<AAABBDDDDEEEEEEEEEFFIIIIKLLMNNOOPQRRRRTTTTTUUUVXY??\>\""}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "8", "]"}], "=", 
-   "\"\<AABBDDDDEEEEEEEEEFFIIKLMNNOOPQRRRTTTTUUUVX??\>\""}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "9", "]"}], "=", 
-   "\"\<ABBDDDDEEEEEEEEFFIKLMNNOOPQRTTUUUVX??\>\""}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "10", "]"}], "=", 
-   "\"\<BBDDDEEEEEEEFFKLMNNOOPQUUUVX??\>\""}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "11", "]"}], "=", 
-   "\"\<BDDEEEEEEFFLMOOPQUUVX??\>\""}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "12", "]"}], "=", "\"\<DEEEELMOOPQUVX??\>\""}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "13", "]"}], "=", "\"\<DEEEMPQU?\>\""}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"gifTiles", "[", "14", "]"}], "=", "\"\<EP\>\""}], ";"}]}], "Input",
- CellChangeTimes->{{3.9433761106805973`*^9, 3.943376121976019*^9}, {
-   3.943376157702591*^9, 3.9433762939018803`*^9}, {3.9433763349000854`*^9, 
-   3.9433764380283737`*^9}, {3.9433764825888805`*^9, 
-   3.9433764949561768`*^9}, {3.9433765347131767`*^9, 
-   3.9433765425407257`*^9}, {3.943376597781273*^9, 3.9433766062121544`*^9}, {
-   3.9433768501853848`*^9, 3.943377231488949*^9}, 3.9433772622600994`*^9, {
-   3.9433773800827103`*^9, 3.9433774241297474`*^9}, {3.943378154311407*^9, 
-   3.943378155357279*^9}, {3.943380701480318*^9, 3.943380770867817*^9}, {
-   3.943380870089712*^9, 3.943381146397684*^9}},
- CellLabel->
-  "In[255]:=",ExpressionUUID->"5a69c486-fb74-7743-b18a-897c081a8b9b"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"scrabbleAnimation", "=", 
-  RowBox[{"Animate", "[", "\[IndentingNewLine]", "  ", 
-   RowBox[{
-    RowBox[{"Grid", "[", 
-     RowBox[{"{", "\[IndentingNewLine]", "    ", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"Style", "[", 
-         RowBox[{"\"\<Tiles Left: \>\"", ",", "12"}], "]"}], "}"}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"{", 
-        RowBox[{"Style", "[", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"If", "[", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"StringLength", "[", 
-              RowBox[{"gifTiles", "[", "i", "]"}], "]"}], ">", "50"}], ",", 
-            "\[IndentingNewLine]", 
-            RowBox[{"StringInsert", "[", 
-             RowBox[{
-              RowBox[{"gifTiles", "[", "i", "]"}], ",", "\"\<\\n\>\"", ",", 
-              "50"}], "]"}], ",", "\[IndentingNewLine]", 
-            RowBox[{"gifTiles", "[", "i", "]"}]}], "\[IndentingNewLine]", 
-           "]"}], ",", "11"}], "]"}], "}"}], ",", 
-       RowBox[{"(*", " ", 
-        RowBox[{
-        "Display", " ", "the", " ", "formatted", " ", "gifTiles", " ", 
-         "string"}], " ", "*)"}], "\[IndentingNewLine]", "    ", 
-       RowBox[{"{", 
-        RowBox[{"Show", "[", 
-         RowBox[{"board", ",", 
-          RowBox[{"Epilog", "->", 
-           RowBox[{"gifFrame", "[", "i", "]"}]}], ",", 
-          RowBox[{"ImageSize", "->", "300"}]}], "]"}], "}"}]}], "  ", 
-      RowBox[{"(*", " ", 
-       RowBox[{
-       "Display", " ", "the", " ", "board", " ", "with", " ", "the", " ", 
-        "current", " ", "frame"}], " ", "*)"}], "\[IndentingNewLine]", "  ", 
-      "}"}], "]"}], ",", "\[IndentingNewLine]", "  ", 
-    RowBox[{"{", 
-     RowBox[{"i", ",", "1", ",", "14.", ",", "1"}], "}"}], ",", 
-    "\[IndentingNewLine]", "  ", 
-    RowBox[{"AnimationRate", "->", "0.5"}]}], "\[IndentingNewLine]", 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.943381636092367*^9, 3.9433816444862633`*^9}, {
-   3.943381686534994*^9, 3.9433818585418777`*^9}, 3.943381914551647*^9, {
-   3.943381952040863*^9, 3.9433819630953197`*^9}, {3.943382100467245*^9, 
-   3.9433821041566753`*^9}},
- CellLabel->
-  "In[274]:=",ExpressionUUID->"24d158ad-1ecd-5244-ac35-8795b383364a"],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`i$$ = 8, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`i$$], 1, 14., 1, ControlType -> Animator}}, 
-    Typeset`size$$ = {
-    329.11570758819585`, {137.91186642781014`, 142.49741334485935`}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
-    Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, "Variables" :> {$CellContext`i$$ = 1}, 
-      "ControllerVariables" :> {}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$, Typeset`keyframeActionsQ$$, 
-        Typeset`keyframeList$$}, "Body" :> Grid[{{
-          Style["Tiles Left: ", 12]}, {
-          Style[
-           If[StringLength[
-              $CellContext`gifTiles[$CellContext`i$$]] > 50, 
-            StringInsert[
-             $CellContext`gifTiles[$CellContext`i$$], "\n", 50], 
-            $CellContext`gifTiles[$CellContext`i$$]], 11]}, {
-          
-          Show[$CellContext`board, 
-           Epilog -> $CellContext`gifFrame[$CellContext`i$$], ImageSize -> 
-           300]}}], 
-      "Specifications" :> {{$CellContext`i$$, 1, 14., 1, AnimationRate -> 0.5,
-          AppearanceElements -> {
-          "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons", 
-           "DirectionButton"}}}, 
-      "Options" :> {
-       ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
-        "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
-        True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{
-      367.99570758819584`, {166.05186642781013`, 170.63741334485934`}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Animate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{
-  3.9433816152540817`*^9, 3.9433816454949226`*^9, {3.943381746598692*^9, 
-   3.943381859639572*^9}, 3.9433819152142925`*^9, {3.94338195399*^9, 
-   3.943381963845907*^9}, 3.9433821052142353`*^9},
- CellLabel->
-  "Out[274]=",ExpressionUUID->"9d019dde-1b0e-c54c-8bc1-92c8ac0ce70a"]
+    RowBox[{"True", ",", 
+     TagBox[GridBox[{
+        {"\<\"Blanks:\"\>", 
+         RowBox[{"{", 
+          RowBox[{"\<\"C\"\>", ",", "\<\"W\"\>"}], "}"}]},
+        {"\<\" Leftovers:\"\>", 
+         RowBox[{"{", "\<\"E\"\>", "}"}]}
+       },
+       AutoDelete->False,
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"True", ",", 
+     TagBox[GridBox[{
+        {"\<\"Blanks:\"\>", 
+         RowBox[{"{", 
+          RowBox[{"\<\"C\"\>", ",", "\<\"R\"\>"}], "}"}]},
+        {"\<\" Leftovers:\"\>", 
+         RowBox[{"{", 
+          RowBox[{"\<\"J\"\>", ",", "\<\"O\"\>"}], "}"}]}
+       },
+       AutoDelete->False,
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"True", ",", 
+     TagBox[GridBox[{
+        {"\<\"Blanks:\"\>", 
+         RowBox[{"{", 
+          RowBox[{"\<\"B\"\>", ",", "\<\"R\"\>"}], "}"}]},
+        {"\<\" Leftovers:\"\>", 
+         RowBox[{"{", 
+          RowBox[{"\<\"E\"\>", ",", "\<\"F\"\>"}], "}"}]}
+       },
+       AutoDelete->False,
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"True", ",", 
+     TagBox[GridBox[{
+        {"\<\"Blanks:\"\>", 
+         RowBox[{"{", 
+          RowBox[{"\<\"M\"\>", ",", "\<\"M\"\>"}], "}"}]},
+        {"\<\" Leftovers:\"\>", 
+         RowBox[{"{", 
+          RowBox[{"\<\"H\"\>", ",", "\<\"Q\"\>"}], "}"}]}
+       },
+       AutoDelete->False,
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+      "Grid"]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.9434285713787365`*^9, 3.9635665429590034`*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"c4c21702-dc70-294c-ac0d-304d1063f26f"]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -3410,7 +3125,7 @@ Function for generating Epilog and Tiles state to be animated.\
 WindowSize->{1140, 645},
 WindowMargins->{{Automatic, -1224}, {Automatic, -53.25}},
 Magnification:>0.8 Inherited,
-FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
 StyleDefinitions->"Chatbook.nb",
 ExpressionUUID->"da0ccef9-0db0-a44d-828d-8ac7d5ab739a"
 ]
@@ -3425,38 +3140,25 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[554, 20, 275, 6, 37, "Input",ExpressionUUID->"c0a6827c-e0b2-4741-989f-68f86240c026"],
+Cell[554, 20, 336, 6, 37, "Input",ExpressionUUID->"c0a6827c-e0b2-4741-989f-68f86240c026"],
 Cell[CellGroupData[{
-Cell[854, 30, 220, 4, 42, "Subsection",ExpressionUUID->"cc15eb46-193e-b04d-a4d4-3dc1fe725c6b"],
-Cell[1077, 36, 216, 5, 22, "Input",ExpressionUUID->"0403f5d4-887d-ba46-afef-59de7e591bfc"],
+Cell[915, 30, 220, 4, 42, "Subsection",ExpressionUUID->"cc15eb46-193e-b04d-a4d4-3dc1fe725c6b"],
+Cell[1138, 36, 216, 5, 22, "Input",ExpressionUUID->"0403f5d4-887d-ba46-afef-59de7e591bfc"],
 Cell[CellGroupData[{
-Cell[1318, 45, 746, 18, 83, "Input",ExpressionUUID->"3a491659-c889-8142-ab4d-3a1c30eaced4"],
-Cell[2067, 65, 31402, 930, 301, "Output",ExpressionUUID->"ed0f88ef-76b9-894c-bd8a-d89e3f447031"],
-Cell[33472, 997, 602, 16, 36, "Output",ExpressionUUID->"d5d165f1-fb0a-8b42-b300-6e11404cf827"],
-Cell[34077, 1015, 90875, 1788, 333, "Output",ExpressionUUID->"ddd18868-814f-f742-a2cd-9cba4b27f2a4"]
+Cell[1379, 45, 737, 15, 83, "Input",ExpressionUUID->"3a491659-c889-8142-ab4d-3a1c30eaced4"],
+Cell[2119, 62, 31430, 930, 301, "Output",ExpressionUUID->"f00544a4-d398-ce4d-962b-1a19b25b93bb"],
+Cell[33552, 994, 624, 16, 36, "Output",ExpressionUUID->"087c2c2d-017f-2442-bb7f-95fb25817cea"],
+Cell[34179, 1012, 92693, 1833, 333, "Output",ExpressionUUID->"bdf4631e-5cdc-7b42-a4c5-e58093d40118"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[124989, 2808, 152, 2, 22, "Input",ExpressionUUID->"9db816c7-1e80-ff46-a319-ce223b8d60d1"],
-Cell[125144, 2812, 6560, 195, 93, "Output",ExpressionUUID->"77af9845-109f-854f-84a8-13cf38e23376"]
+Cell[126909, 2850, 152, 2, 22, "Input",ExpressionUUID->"9db816c7-1e80-ff46-a319-ce223b8d60d1"],
+Cell[127064, 2854, 8289, 246, 121, "Output",ExpressionUUID->"c4c21702-dc70-294c-ac0d-304d1063f26f"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[131753, 3013, 153, 3, 42, "Subsection",ExpressionUUID->"35c0cb79-f368-1b4f-b165-34d01086713e"],
-Cell[131909, 3018, 3065, 100, 220, "Input",ExpressionUUID->"967db361-792a-7e44-a8d6-71a9df524c61"],
-Cell[CellGroupData[{
-Cell[134999, 3122, 535, 13, 22, "Input",ExpressionUUID->"2f39e28e-27d2-2847-bc1c-9901bac4e2fe"],
-Cell[135537, 3137, 2262, 44, 357, "Output",ExpressionUUID->"22b34f75-6cdf-0547-a2b4-31bcc17daea5"]
-}, Open  ]],
-Cell[137814, 3184, 3369, 87, 235, "Input",ExpressionUUID->"5a69c486-fb74-7743-b18a-897c081a8b9b"],
-Cell[CellGroupData[{
-Cell[141208, 3275, 2225, 51, 205, "Input",ExpressionUUID->"24d158ad-1ecd-5244-ac35-8795b383364a"],
-Cell[143436, 3328, 2767, 57, 350, "Output",ExpressionUUID->"9d019dde-1b0e-c54c-8bc1-92c8ac0ce70a"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[146252, 3391, 155, 3, 41, "Subtitle",ExpressionUUID->"42cf8020-fff5-a049-bd26-d04583a01845"],
-Cell[146410, 3396, 188, 3, 24, "Item",ExpressionUUID->"e0af3685-4a9d-ee40-9db2-9b0049979c66"],
-Cell[146601, 3401, 216, 5, 24, "Item",ExpressionUUID->"cae2e6aa-b8e5-1747-9a0e-517ccd3ffcc3"]
+Cell[135402, 3106, 155, 3, 41, "Subtitle",ExpressionUUID->"42cf8020-fff5-a049-bd26-d04583a01845"],
+Cell[135560, 3111, 188, 3, 24, "Item",ExpressionUUID->"e0af3685-4a9d-ee40-9db2-9b0049979c66"],
+Cell[135751, 3116, 216, 5, 24, "Item",ExpressionUUID->"cae2e6aa-b8e5-1747-9a0e-517ccd3ffcc3"]
 }, Open  ]]
 }
 ]

@@ -1,4 +1,5 @@
-BeginPackage["Scrabbology`Version1`", {"Scrabbology`ScrabbleScore`"}];
+BeginPackage["Scrabbology`Scrabblegorithm`"]
+
 tiles;
 UpdateUsedTileCount;
 UpdateRemainingTileCount;
