@@ -4,5 +4,5 @@ Get[#]& /@ {
     "Scrabbology`ScrabbleHelper`",
     "Scrabbology`Scrabble-gorithm`",
     "Scrabbology`ScrabbleBoard`"
-  (* .m File Names. *)
+  (* .wl File Names. *)
 };
